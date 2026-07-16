@@ -2,6 +2,24 @@ import discord
 from discord.ext import commands
 import random
 import os
+from flask import Flask
+from threading import Thread
+
+# --- SERWER WWW DO "BUDZENIA" BOTA ---
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run_server():
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
+
+def keep_alive():
+    t = Thread(target=run_server)
+    t.start()
+# --------------------------------------
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -24,4 +42,8 @@ async def labirynt(ctx):
 async def zagadka(ctx):
     await ctx.send("*[Podbiega do ciebie i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\nTwoja zagadka tutaj.\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
 
+# Uruchomienie "budzika"
+keep_alive()
+
+# Start bota
 bot.run(os.environ['TOKEN'])
