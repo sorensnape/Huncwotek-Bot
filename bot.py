@@ -36,11 +36,11 @@ async def uratuj(ctx):
 
 @bot.command()
 async def labirynt(ctx):
-    await ctx.send("*[Podbiega do Ciebie i staje obok, wręczając Ci po cichu kawałek [pergaminu](https://jpcdn.it/img/small/d5953c28c807883d4823234cf4754814.webp)].* **Oto dzisiejszy labirynt! Nie zapomnij tylko odesłać wypełnionego poprzez formularz!** *[Podaje mu następny [pergamin](https://tiny.pl/dx98w) i zadowolony wraca do swojej wcześniejszej zabawy.]*")
+    await ctx.send("*[Podbiega szybko i staje obok, wręczając Ci po cichu kawałek [pergaminu](https://jpcdn.it/img/small/d5953c28c807883d4823234cf4754814.webp)].* **Oto dzisiejszy labirynt! Nie zapomnij tylko odesłać wypełnionego poprzez formularz!** *[Podaje mu następny [pergamin](https://tiny.pl/dx98w) i zadowolony wraca do swojej wcześniejszej zabawy.]*")
 
 @bot.command()
 async def zagadka(ctx):
-    await ctx.send("*[Podbiega do ciebie i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\nNie pokazuje ono tego, co jest w rzeczywistości, ale to, czego najbardziej pragniemy w głębi serca. Harry widział w nim swoich rodziców, a Dumbledore parę wełnianych skarpetek. Co to za przedmiot?\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
+    await ctx.send("*[Podbiega szybko i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\n`Nie pokazuje ono tego, co jest w rzeczywistości, ale to, czego najbardziej pragniemy w głębi serca. Harry widział w nim swoich rodziców, a Dumbledore parę wełnianych skarpetek. Co to za przedmiot?`\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
 
 # Uruchomienie "budzika"
 keep_alive()
