@@ -27,10 +27,18 @@ intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.command()
-async def uratuj(ctx):
+async def uratujucz(ctx):
     odpowiedzi = [
         "*Lecisz już na hipogryfie, niestety lądujesz w złej części Azkabanu i łapią Cię dementorzy.* **Otrzymujesz 5 punktów - za dobre chęci.**",
         "*Przylatuje po Ciebie hipogryf, wsiadasz na niego i lecisz do Azkabanu.* **Otrzymujesz 10 punktów!**"
+    ]
+    await ctx.send(random.choice(odpowiedzi))
+
+@bot.command()
+async def uratujprof(ctx):
+    odpowiedzi = [
+        "*Lecisz już na hipogryfie, niestety lądujesz w złej części Azkabanu i łapią Cię dementorzy.* **Otrzymujesz 3 punkty - za dobre chęci.**",
+        "*Przylatuje po Ciebie hipogryf, wsiadasz na niego i lecisz do Azkabanu.* **Otrzymujesz 6 punktów!**"
     ]
     await ctx.send(random.choice(odpowiedzi))
 
