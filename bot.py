@@ -44,11 +44,11 @@ async def uratujprof(ctx):
 
 @bot.command()
 async def labirynt(ctx):
-    await ctx.send("*[Podbiega szybko i staje obok, wręczając Ci po cichu kawałek [pergaminu](https://jpcdn.it/img/small/82c19bd4bf315d86c477759763b4ba6a.webp)].* **Oto dzisiejszy labirynt! Nie zapomnij tylko odesłać wypełnionego poprzez formularz!** *[Podaje mu następny [pergamin](https://tiny.pl/dx98w) i zadowolony wraca do swojej wcześniejszej zabawy.]*")
+    await ctx.send("*[Podbiega szybko i staje obok, wręczając Ci po cichu kawałek [pergaminu](https://jpcdn.it/img/small/57630a7f1a7d0c16ab79272397e96734.webp)].* **Oto dzisiejszy labirynt! Nie zapomnij tylko odesłać wypełnionego poprzez formularz!** *[Podaje mu następny [pergamin](https://tiny.pl/dx98w) i zadowolony wraca do swojej wcześniejszej zabawy.]*")
 
 @bot.command()
 async def zagadka(ctx):
-    await ctx.send("*[Podbiega szybko i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\n`To magiczne miejsce ukryte przed oczami mugoli, gdzie młodzi czarodzieje uczą się rzucać zaklęcia i warzyć eliksiry. Prowadzi do niego ukryty peron na stacji kolejowej. Jak nazywa się ta szkoła?`\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
+    await ctx.send("*[Podbiega szybko i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\n`Wystarczy jeden łyk, by na krótki czas zmienić swój wygląd w kogoś zupełnie innego, korzystając z jego włosa lub innej części ciała. To jeden z najtrudniejszych do przygotowania, ale niezwykle przydatnych eliksirów. Co to za mikstura?`\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
 
 # Uruchomienie "budzika"
 keep_alive()
