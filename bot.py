@@ -44,11 +44,11 @@ async def uratujprof(ctx):
 
 @bot.command()
 async def labirynt(ctx):
-    await ctx.send("*[Podbiega szybko i staje obok, wręczając Ci po cichu kawałek [pergaminu](https://jpcdn.it/img/small/7206378f13b45dd74dae9d5003f4feb2.webp)].* **Oto dzisiejszy labirynt! Nie zapomnij tylko odesłać wypełnionego poprzez formularz!** *[Podaje mu następny [pergamin](https://tiny.pl/dx98w) i zadowolony wraca do swojej wcześniejszej zabawy.]*")
+    await ctx.send("*[Podbiega szybko i staje obok, wręczając Ci po cichu kawałek [pergaminu](https://jpcdn.it/img/small/633d0289ccf2dc00e95f397f97a36d0f.webp)].* **Oto dzisiejszy labirynt! Nie zapomnij tylko odesłać wypełnionego poprzez formularz!** *[Podaje mu następny [pergamin](https://tiny.pl/dx98w) i zadowolony wraca do swojej wcześniejszej zabawy.]*")
 
 @bot.command()
 async def zagadka(ctx):
-    await ctx.send("*[Podbiega szybko i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\n`Są wykonane z drewna i mają różne parametry prędkości oraz zwrotności. Każdy szukający musi posiadać jedną z nich, aby móc brać udział w meczach w powietrzu. Czym podróżują czarodzieje?`\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
+    await ctx.send("*[Podbiega szybko i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\n`Harry nosi ją od dziecka jako wspomnienie nocy, w której stracił rodziców. To wyjątkowy znak, który łączy go na zawsze z mrocznym panem i sprawia, że jest rozpoznawalny dla każdego w świecie magii. Co to za ślad?`\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
 
 # Uruchomienie "budzika"
 keep_alive()
