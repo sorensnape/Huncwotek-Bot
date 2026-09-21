@@ -5,21 +5,22 @@ import os
 from flask import Flask
 from threading import Thread
 
-# --- SERWER WWW DO "BUDZENIA" BOTA ---
+# --- PROSTY SERWER DLA RENDERA ---
 app = Flask('')
 
 @app.route('/')
 def home():
-    return "Bot is alive!"
+    return "Huncwotek żyje!"
 
-def run_server():
+def run():
     port = int(os.environ.get("PORT", 10000))
     app.run(host='0.0.0.0', port=port)
 
 def keep_alive():
-    t = Thread(target=run_server)
+    t = Thread(target=run)
+    t.daemon = True
     t.start()
-# --------------------------------------
+# ---------------------------------
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -50,8 +51,12 @@ async def labirynt(ctx):
 async def zagadka(ctx):
     await ctx.send("*[Podbiega szybko i staje przed tobą, kaszląc dwa razy.]* ***Czekasz na zagadkę? No dobrze… Oto dzisiejsza!***\n`Harry nosi ją od dziecka jako wspomnienie nocy, w której stracił rodziców. To wyjątkowy znak, który łączy go na zawsze z mrocznym panem i sprawia, że jest rozpoznawalny dla każdego w świecie magii. Co to za ślad?`\n***Nie zapomnij o odpowiedzi! Masz tu jeszcze formularz na to.*** *[Podaje szybko części [pergaminu](https://tiny.pl/dxp66)].*")
 
-# Uruchomienie "budzika"
+@bot.event
+async def on_ready():
+    print(f'Zalogowano jako {bot.user}!')
+
+# Uruchomienie serwera w tle
 keep_alive()
 
-# Start bota
+# Uruchomienie bota
 bot.run(os.environ['TOKEN'])
